@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Github, Linkedin, Twitter, Send, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal } from "./Reveal";
+import { PACKAGES } from "./Services";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -12,8 +13,14 @@ const SOCIALS = [
 ];
 
 export const Contact = () => {
-  const [form, setForm] = useState({ naam: "", email: "", bericht: "" });
+  const [form, setForm] = useState({ naam: "", email: "", bericht: "", pakket: "" });
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const onSelect = (e) => setForm((f) => ({ ...f, pakket: e.detail }));
+    window.addEventListener("modrn:select-package", onSelect);
+    return () => window.removeEventListener("modrn:select-package", onSelect);
+  }, []);
 
   const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
 
@@ -28,7 +35,7 @@ export const Contact = () => {
       });
       if (!res.ok) throw new Error();
       toast.success("Aanvraag verzonden! Ik neem snel contact met je op.");
-      setForm({ naam: "", email: "", bericht: "" });
+      setForm({ naam: "", email: "", bericht: "", pakket: "" });
     } catch {
       toast.error("Verzenden mislukt. Probeer het later opnieuw.");
     } finally {
@@ -43,7 +50,7 @@ export const Contact = () => {
 
       <div className="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">05 — Contact</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">06 — Contact</p>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-50">
             Vraag een custom website aan
           </h2>
@@ -105,6 +112,25 @@ export const Contact = () => {
                 placeholder="jij@voorbeeld.nl"
                 className="w-full rounded-lg bg-ink/60 border border-sky/20 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-peach focus:ring-1 focus:ring-peach transition-colors"
               />
+            </div>
+            <div>
+              <label htmlFor="contact-pakket" className="block text-sm font-semibold text-slate-200 mb-2">
+                Pakket
+              </label>
+              <select
+                id="contact-pakket"
+                data-testid="contact-form-package"
+                value={form.pakket}
+                onChange={set("pakket")}
+                className="w-full rounded-lg bg-ink/60 border border-sky/20 px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-peach focus:ring-1 focus:ring-peach transition-colors"
+              >
+                <option value="">Weet ik nog niet — graag advies</option>
+                {PACKAGES.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.name} (vanaf {p.price})
+                  </option>
+                ))}
+              </select>
             </div>
             <div>
               <label htmlFor="contact-bericht" className="block text-sm font-semibold text-slate-200 mb-2">

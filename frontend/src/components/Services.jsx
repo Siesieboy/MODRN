@@ -1,7 +1,7 @@
 import { Check, ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const PACKAGES = [
+export const PACKAGES = [
   {
     id: "onepager",
     name: "One-Pager",
@@ -96,6 +96,11 @@ export const Services = () => (
               <a
                 href="#contact"
                 data-testid={`service-cta-${p.id}`}
+                onClick={() =>
+                  window.dispatchEvent(
+                    new CustomEvent("modrn:select-package", { detail: p.id })
+                  )
+                }
                 className={`group mt-9 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 ${
                   p.featured
                     ? "bg-peach text-navy hover:bg-peach-hover"

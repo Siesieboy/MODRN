@@ -8,6 +8,7 @@ import { About } from "@/components/About";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Services } from "@/components/Services";
+import { Reviews } from "@/components/Reviews";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -36,6 +37,7 @@ function App() {
         <Projects />
         <Skills />
         <Services />
+        <Reviews />
         <Contact />
       </main>
       <Footer />

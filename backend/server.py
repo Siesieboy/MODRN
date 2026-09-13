@@ -134,6 +134,7 @@ class ContactMessage(BaseModel):
     naam: str = Field(min_length=2, max_length=100)
     email: EmailStr
     bericht: str = Field(min_length=10, max_length=2000)
+    pakket: str = Field(default="", max_length=60)
 
 
 _RATE: dict[str, list[float]] = {}
@@ -157,12 +158,17 @@ async def root():
 async def submit_contact(message: ContactMessage, request: Request):
     _rate_limit(request.client.host if request.client else "unknown")
     subject = f"Nieuwe website-aanvraag van {message.naam}"
+    pakket_regel = (
+        f'<p><strong>Gekozen pakket:</strong> {escape(message.pakket)}</p>' if message.pakket else
+        '<p><strong>Gekozen pakket:</strong> Nog geen keuze — graag advies</p>'
+    )
     html = (
         '<table role="presentation" width="100%"><tr><td style="padding:24px;'
         'font-family:Arial,sans-serif;color:#0C2340">'
         f'<h2 style="margin:0 0 16px">Nieuwe aanvraag via je MODRN-website</h2>'
         f'<p><strong>Naam:</strong> {escape(message.naam)}</p>'
         f'<p><strong>E-mail:</strong> {escape(message.email)}</p>'
+        f'{pakket_regel}'
         f'<p><strong>Bericht:</strong></p>'
         f'<p style="white-space:pre-wrap;background:#F5F5F5;padding:16px;border-radius:8px">'
         f'{escape(message.bericht)}</p>'
@@ -175,6 +181,7 @@ async def submit_contact(message: ContactMessage, request: Request):
         "naam": message.naam,
         "email": message.email,
         "bericht": message.bericht,
+        "pakket": message.pakket,
         "created_at": datetime.now(timezone.utc).isoformat(),
         "email_id": email_id,
     }
