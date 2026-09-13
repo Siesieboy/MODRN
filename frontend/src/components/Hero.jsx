@@ -53,12 +53,12 @@ export const Hero = () => {
           <h1 className="font-display font-extrabold tracking-tight text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-slate-50">
             <Line delay={0.3}>Hallo, ik ben</Line>
             <Line delay={0.45}>
-              <span className="text-peach">[Jouw Naam]</span>
+              <span className="text-peach">Sies Pasteuning</span>
             </Line>
             <Line delay={0.6}>
-              <span className="text-outline">Frontend Developer</span>
+              <span className="text-outline">Custom Websites</span>
             </Line>
-            <Line delay={0.75}>& UI/UX Designer</Line>
+            <Line delay={0.75}>& Design</Line>
           </h1>
 
           <motion.p
@@ -67,8 +67,9 @@ export const Hero = () => {
             transition={{ delay: 1.0, duration: 0.7 }}
             className="mt-8 max-w-xl text-base leading-relaxed text-slate-400"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Met MODRN website building & design ontwerp en bouw ik op maat
+            gemaakte websites en designs voor ondernemers en merken die online
+            willen opvallen — snel, strak en helemaal in jouw stijl.
           </motion.p>
 
           <motion.div
@@ -90,7 +91,7 @@ export const Hero = () => {
               data-testid="hero-cta-contact"
               className="inline-flex items-center gap-2 border border-sky text-sky font-semibold text-sm px-7 py-3.5 rounded-full hover:bg-sky/10 hover:-translate-y-0.5 transition-all duration-300"
             >
-              Neem contact op
+              Vraag een website aan
             </a>
           </motion.div>
         </div>
@@ -113,14 +114,14 @@ export const Hero = () => {
             <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-sky/30 via-transparent to-peach/30 pointer-events-none" />
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=85&w=900&auto=format&fit=crop"
-              alt="Portret van [Jouw Naam]"
+              alt="Portret van Sies Pasteuning"
               className="relative rounded-xl w-full aspect-[4/5] object-cover"
             />
             <div className="absolute -bottom-5 -left-5 bg-navy border border-sky/25 rounded-xl px-5 py-3.5 flex items-center gap-3 shadow-xl">
               <Sparkles size={18} className="text-peach" />
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-sky">Focus</p>
-                <p className="text-sm font-semibold text-slate-100">Digitale ervaringen</p>
+                <p className="font-mono text-[10px] uppercase tracking-widest text-sky">MODRN</p>
+                <p className="text-sm font-semibold text-slate-100">Websites op maat</p>
               </div>
             </div>
           </motion.div>

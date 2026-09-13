@@ -27,7 +27,7 @@ export const Contact = () => {
         body: JSON.stringify(form),
       });
       if (!res.ok) throw new Error();
-      toast.success("Bericht verzonden! Ik neem snel contact met je op.");
+      toast.success("Aanvraag verzonden! Ik neem snel contact met je op.");
       setForm({ naam: "", email: "", bericht: "" });
     } catch {
       toast.error("Verzenden mislukt. Probeer het later opnieuw.");
@@ -45,12 +45,12 @@ export const Contact = () => {
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">04 — Contact</p>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-50">
-            Laten we iets moois bouwen
+            Vraag een custom website aan
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-slate-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Heb je een
-            project, vraag of idee? Stuur gerust een bericht — ik reageer
-            meestal binnen een dag.
+            Op zoek naar een website of design op maat? Vertel kort over je
+            project of idee — ik reageer meestal binnen een dag met een
+            vrijblijvend voorstel.
           </p>
           <div className="mt-10 flex gap-4">
             {SOCIALS.map((s) => (
@@ -118,7 +118,7 @@ export const Contact = () => {
                 rows={5}
                 value={form.bericht}
                 onChange={set("bericht")}
-                placeholder="Vertel over je project of vraag..."
+                placeholder="Vertel kort over je gewenste website of design..."
                 className="w-full rounded-lg bg-ink/60 border border-sky/20 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-peach focus:ring-1 focus:ring-peach transition-colors resize-none"
               />
             </div>
@@ -129,7 +129,7 @@ export const Contact = () => {
               className="w-full inline-flex items-center justify-center gap-2 bg-peach text-navy font-semibold text-sm px-7 py-3.5 rounded-full hover:bg-peach-hover hover:-translate-y-0.5 disabled:opacity-60 disabled:translate-y-0 transition-all duration-300 shadow-[0_8px_30px_rgba(255,218,185,0.2)]"
             >
               {loading ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
-              {loading ? "Verzenden..." : "Verstuur bericht"}
+              {loading ? "Verzenden..." : "Verstuur aanvraag"}
             </button>
           </form>
         </Reveal>

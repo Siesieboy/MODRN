@@ -20,7 +20,7 @@ export const Navbar = () => {
           data-testid="nav-logo"
           className="font-mono text-sm sm:text-base tracking-widest text-peach uppercase"
         >
-          [Jouw Naam]
+          MODRN<span className="text-sky">.</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-10">

@@ -1,12 +1,12 @@
 const ITEMS = [
-  "Frontend Development",
+  "MODRN",
+  "Custom Websites",
+  "Webdesign op Maat",
   "UI/UX Design",
   "React",
-  "Creative Coding",
-  "Design Systems",
-  "Toegankelijkheid",
-  "Micro-interacties",
-  "Pixel Perfect",
+  "Branding",
+  "Responsive Design",
+  "Snelle Laadtijden",
 ];
 
 export const Marquee = () => (

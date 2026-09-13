@@ -22,7 +22,7 @@ export const About = () => (
             <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-peach" />
             <img
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=85&w=1000&auto=format&fit=crop"
-              alt="Werkplek van [Jouw Naam]"
+              alt="Werkplek van Sies Pasteuning"
               data-testid="about-portrait"
               className="relative rounded-2xl w-full aspect-[4/3] object-cover shadow-2xl"
             />
@@ -32,16 +32,15 @@ export const About = () => (
         <div>
           <Reveal delay={0.15}>
             <p className="text-base leading-relaxed text-slate-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Ik ben Sies Pasteuning, oprichter van MODRN website building &
+              design. Ik help ondernemers en merken aan een online aanwezigheid
+              die klopt: maatwerk websites en designs die er niet alleen strak
+              uitzien, maar ook snel laden en bezoekers overtuigen.
             </p>
             <p className="mt-5 text-base leading-relaxed text-slate-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              Geen standaard templates, maar maatwerk — van eerste schets tot
+              livegang. Jij levert de ambitie, ik zorg voor een website die
+              daar naadloos bij aansluit.
             </p>
           </Reveal>
 

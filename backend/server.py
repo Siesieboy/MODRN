@@ -156,11 +156,11 @@ async def root():
 @api_router.post("/contact")
 async def submit_contact(message: ContactMessage, request: Request):
     _rate_limit(request.client.host if request.client else "unknown")
-    subject = f"Nieuw contactbericht van {message.naam}"
+    subject = f"Nieuwe website-aanvraag van {message.naam}"
     html = (
         '<table role="presentation" width="100%"><tr><td style="padding:24px;'
         'font-family:Arial,sans-serif;color:#0C2340">'
-        f'<h2 style="margin:0 0 16px">Nieuw bericht via je portfolio</h2>'
+        f'<h2 style="margin:0 0 16px">Nieuwe aanvraag via je MODRN-website</h2>'
         f'<p><strong>Naam:</strong> {escape(message.naam)}</p>'
         f'<p><strong>E-mail:</strong> {escape(message.email)}</p>'
         f'<p><strong>Bericht:</strong></p>'
