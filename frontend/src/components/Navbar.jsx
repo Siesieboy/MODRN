@@ -19,9 +19,14 @@ export const Navbar = () => {
         <a
           href="#home"
           data-testid="nav-logo"
-          className="font-mono text-sm sm:text-base tracking-widest text-peach uppercase"
+          className="flex items-center"
+          aria-label="MODRN — naar boven"
         >
-          MODRN<span className="text-sky">.</span>
+          <img
+            src="/images/modrn-mark.png"
+            alt="MODRN"
+            className="h-7 sm:h-8 w-auto drop-shadow-[0_0_12px_rgba(135,206,235,0.35)]"
+          />
         </a>
 
         <ul className="hidden md:flex items-center gap-10">

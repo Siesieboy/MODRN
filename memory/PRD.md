@@ -36,3 +36,6 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 ## Update 2026-09-13 (bevestigingsmail)
 - Aanvragers krijgen nu automatisch een bevestigingsmail ("Bedankt voor je aanvraag — MODRN") met hun pakketkeuze en reactietijd. Mislukt de bevestiging, dan gaat de aanvraag zelf alsnog door (wordt gelogd). Geverifieerd met testverzending: beide mails verstuurd, geen fouten.
 
+## Update 2026-09-13 (logo)
+- Officieel MODRN-logo geïnstalleerd: witte achtergrond verwijderd (transparant PNG), volledige logo met tagline in de hero, alleen het MODRN-beeldmerk in de navigatie linksboven (/images/modrn-logo.png, /images/modrn-mark.png). Geverifieerd op desktop en mobiel.
+

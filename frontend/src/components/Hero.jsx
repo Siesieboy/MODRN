@@ -40,15 +40,19 @@ export const Hero = () => {
 
       <div className="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-14 items-center w-full">
         <div className="lg:col-span-7">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="font-mono text-xs sm:text-sm uppercase tracking-[0.3em] text-sky mb-8 flex items-center gap-3"
+            className="mb-8"
           >
-            <span className="w-10 h-px bg-sky inline-block" />
-            Portfolio — 2026
-          </motion.p>
+            <img
+              src="/images/modrn-logo.png"
+              alt="MODRN website building & design"
+              data-testid="hero-logo"
+              className="h-16 sm:h-20 w-auto drop-shadow-[0_0_24px_rgba(135,206,235,0.3)]"
+            />
+          </motion.div>
 
           <h1 className="font-display font-extrabold tracking-tight text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-slate-50">
             <Line delay={0.3}>Hallo, ik ben</Line>
