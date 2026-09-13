@@ -33,3 +33,6 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 - P1: Echte projecten/cases van MODRN toevoegen zodra beschikbaar
 - P2: Blog, NL/EN-toggle, Reviews-link in navigatie
 
+## Update 2026-09-13 (bevestigingsmail)
+- Aanvragers krijgen nu automatisch een bevestigingsmail ("Bedankt voor je aanvraag — MODRN") met hun pakketkeuze en reactietijd. Mislukt de bevestiging, dan gaat de aanvraag zelf alsnog door (wordt gelogd). Geverifieerd met testverzending: beide mails verstuurd, geen fouten.
+

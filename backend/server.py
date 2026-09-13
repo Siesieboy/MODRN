@@ -176,6 +176,33 @@ async def submit_contact(message: ContactMessage, request: Request):
         '</td></tr></table>'
     )
     email_id = await send_email(to=CONTACT_RECIPIENT, subject=subject, html=html)
+
+    pakket_tekst = {
+        "onepager": "One-Pager (vanaf €499)",
+        "business": "Business Site (vanaf €999)",
+        "maatwerk": "Webshop / Maatwerk (vanaf €1.999)",
+    }.get(message.pakket, "Nog geen keuze — we denken graag met je mee")
+    bevestiging_html = (
+        '<table role="presentation" width="100%"><tr><td style="padding:24px;'
+        'font-family:Arial,sans-serif;color:#0C2340">'
+        f'<h2 style="margin:0 0 16px">Bedankt voor je aanvraag, {escape(message.naam)}!</h2>'
+        '<p>Je bericht is goed aangekomen bij MODRN website building &amp; design. '
+        'Ik neem meestal binnen één werkdag contact met je op met een vrijblijvend voorstel.</p>'
+        f'<p><strong>Jouw pakketkeuze:</strong> {escape(pakket_tekst)}</p>'
+        '<p style="margin-top:24px">Met vriendelijke groet,<br/>Sies Pasteuning<br/>'
+        'MODRN website building &amp; design</p>'
+        f'<p style="font-size:12px;color:#888;margin-top:24px">Verzonden via {escape(EMAIL_FROM_NAME)}. '
+        'Dit is een automatische bevestiging van jouw aanvraag.</p>'
+        '</td></tr></table>'
+    )
+    try:
+        await send_email(
+            to=message.email,
+            subject="Bedankt voor je aanvraag — MODRN",
+            html=bevestiging_html,
+        )
+    except Exception as e:
+        logger.warning(f"Bevestigingsmail aan aanvrager mislukt: {e}")
     doc = {
         "id": str(uuid.uuid4()),
         "naam": message.naam,
