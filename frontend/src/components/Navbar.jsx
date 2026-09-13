@@ -25,7 +25,7 @@ export const Navbar = () => {
           <img
             src="/images/modrn-mark.png"
             alt="MODRN"
-            className="h-5 sm:h-6 w-auto drop-shadow-[0_0_12px_rgba(135,206,235,0.35)]"
+            className="h-4 w-auto drop-shadow-[0_0_12px_rgba(135,206,235,0.35)]"
           />
         </a>
 

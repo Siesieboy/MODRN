@@ -47,8 +47,8 @@ export const Hero = () => {
             className="mb-8"
           >
             <img
-              src="/images/modrn-logo.png"
-              alt="MODRN website building & design"
+              src="/images/modrn-mark.png"
+              alt="MODRN"
               data-testid="hero-logo"
               className="h-16 sm:h-20 w-auto drop-shadow-[0_0_24px_rgba(135,206,235,0.3)]"
             />
