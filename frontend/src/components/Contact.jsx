@@ -6,7 +6,7 @@ import { Reveal } from "./Reveal";
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const SOCIALS = [
-  { name: "GitHub", icon: Github, href: "https://github.com", id: "github" },
+  { name: "GitHub", icon: Github, href: "https://github.com/Siesieboy", id: "github" },
   { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com", id: "linkedin" },
   { name: "Twitter / X", icon: Twitter, href: "https://x.com", id: "twitter" },
 ];
@@ -37,13 +37,13 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" data-testid="contact-section" className="relative bg-navy py-28 sm:py-36 overflow-hidden">
+    <section id="contact" data-testid="contact-section" className="relative bg-ink py-28 sm:py-36 overflow-hidden">
       <div className="grain absolute inset-0 opacity-[0.05] pointer-events-none" />
       <div className="absolute -top-40 left-1/3 w-[480px] h-[480px] rounded-full bg-sky/10 blur-[140px] pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">04 — Contact</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">05 — Contact</p>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-50">
             Vraag een custom website aan
           </h2>

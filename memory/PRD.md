@@ -24,10 +24,11 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 ## Geïmplementeerd
 - 2026-09-13: Volledige site v1 — kinetische hero met line-reveal + 3D tilt portret, editorial marquee, Over Mij met manifesto-hoofdstukken, projecten-grid met detail-modal, skill-tabs met geanimeerde bars, werkend contactformulier (DB + e-mail), footer. Geverifieerd e2e.
 - 2026-09-13: Rebrand naar MODRN / Sies Pasteuning — echte naam overal ingevuld, copy herschreven rond custom website-aanvragen, e-mailbranding naar MODRN, CTA "Vraag een website aan". Geverifieerd: e-mailverzending met nieuwe branding, e2e aanvraagflow.
+- 2026-09-13: Echte foto's van Sies geïnstalleerd (hero + Over mij, /images/sies-1.webp en sies-2.webp). GitHub gekoppeld (https://github.com/Siesieboy). Nieuwe Diensten-sectie met 3 pakketten (One-Pager €499 / Business Site €999 uitgelicht / Webshop-Maatwerk €1.999 — vanaf-prijzen, verzonnen, eigenaar kan aanpassen). Projecten vervangen door 4 AI-gegenereerde MODRN-conceptvoorbeelden (Bakkerij Van Dort, FitCentrum Lokaal, Café Koper, Studio Nova; /images/projects/*.png, modal vermeldt dat het concepten zijn). Navigatie uitgebreid met Diensten; sectienummering 01–05.
 
 ## Backlog
-- P0: Echte portretfoto en projectafbeeldingen van Sies vervangen (nu stock)
-- P1: Echte social media URL's koppelen (nu placeholder-links)
-- P1: Echte projecten/cases van MODRN tonen
-- P2: Diensten/pakketten-sectie met prijzen, blog, NL/EN-toggle
+- P0: Prijzen in Diensten-sectie laten bevestigen/aanpassen door Sies
+- P1: LinkedIn en X URL's koppelen (nog placeholder-links)
+- P1: Echte projecten/cases van MODRN toevoegen zodra beschikbaar
+- P2: Blog, NL/EN-toggle, klantreviews-sectie
 

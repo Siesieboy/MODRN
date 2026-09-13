@@ -12,38 +12,34 @@ import { useState } from "react";
 const PROJECTS = [
   {
     id: "proj-1",
-    title: "Fintech Dashboard Analytics",
+    title: "Bakkerij Van Dort — Webshop",
     description:
-      "Real-time financieel dashboard met high-frequency datavisualisaties, interactieve grafieken en geautomatiseerde rapportage.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=85&w=1200&auto=format&fit=crop",
-    tags: ["React", "TailwindCSS", "Recharts", "TypeScript"],
+      "Warme webshop met online bestellen en afhalen, ontworpen om meer omzet uit de buurt te halen.",
+    image: "/images/projects/proj-bakkerij.png",
+    tags: ["React", "TailwindCSS", "Bestelsysteem", "SEO"],
   },
   {
     id: "proj-2",
-    title: "E-Commerce Design System",
+    title: "FitCentrum Lokaal — Boekingssite",
     description:
-      "Modulair en toegankelijk componenten-framework voor een internationale mode-retailer met focus op conversie.",
-    image:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=85&w=1200&auto=format&fit=crop",
-    tags: ["Next.js", "Framer Motion", "Shadcn/UI", "Storybook"],
+      "Leden boeken een les in twee klikken en het team ziet realtime de bezetting per uur.",
+    image: "/images/projects/proj-fitcentrum.png",
+    tags: ["Next.js", "Framer Motion", "Boekingssysteem", "Design"],
   },
   {
     id: "proj-3",
-    title: "Mobile Banking Interface",
+    title: "Café Koper — Restaurant",
     description:
-      "Next-gen mobiele bankieren-app met biometrische beveiliging, micro-interacties en donkere modus.",
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=85&w=1200&auto=format&fit=crop",
-    tags: ["React Native", "Tailwind", "Zustand", "Figma"],
+      "Sfeervolle site met menukaart, reserveringsmodule en het verhaal achter het huis.",
+    image: "/images/projects/proj-cafekoper.png",
+    tags: ["React", "UI/UX", "Reserveren", "SEO"],
   },
   {
     id: "proj-4",
-    title: "Creative Studio Portfolio Hub",
+    title: "Studio Nova — Portfolio",
     description:
-      "Minimalistische portfolio-site met scrollytelling-visualisaties, WebGL-effecten en bliksemsnelle laadtijden.",
-    image:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?q=85&w=1200&auto=format&fit=crop",
+      "Minimalistisch studioportfolio met scrollytelling dat nieuwe opdrachten binnenhaalt.",
+    image: "/images/projects/proj-studionova.png",
     tags: ["Three.js", "Lenis", "GSAP", "TailwindCSS"],
   },
 ];
@@ -115,8 +111,8 @@ export const Projects = () => {
               <DialogHeader>
                 <DialogTitle className="font-display text-2xl text-peach">{active.title}</DialogTitle>
                 <DialogDescription className="text-slate-400 leading-relaxed">
-                  {active.description} Lorem ipsum dolor sit amet, consectetur adipiscing elit —
-                  meer details over dit project volgen binnenkort.
+                  {active.description} Dit is een AI-gegenereerd conceptvoorbeeld
+                  van MODRN — zo zou jouw project eruit kunnen zien.
                 </DialogDescription>
               </DialogHeader>
               <div className="flex flex-wrap gap-2 pt-2">

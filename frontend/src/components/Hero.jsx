@@ -113,7 +113,7 @@ export const Hero = () => {
           >
             <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-sky/30 via-transparent to-peach/30 pointer-events-none" />
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=85&w=900&auto=format&fit=crop"
+              src="/images/sies-1.webp"
               alt="Portret van Sies Pasteuning"
               className="relative rounded-xl w-full aspect-[4/5] object-cover"
             />

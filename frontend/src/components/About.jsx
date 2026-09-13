@@ -21,8 +21,8 @@ export const About = () => (
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-peach" />
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=85&w=1000&auto=format&fit=crop"
-              alt="Werkplek van Sies Pasteuning"
+              src="/images/sies-2.webp"
+              alt="Sies Pasteuning aan het werk"
               data-testid="about-portrait"
               className="relative rounded-2xl w-full aspect-[4/3] object-cover shadow-2xl"
             />
