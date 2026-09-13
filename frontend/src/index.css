@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 214 69% 15%;
+        --foreground: 210 40% 98%;
+        --primary: 27 100% 86%;
+        --primary-foreground: 214 69% 15%;
+        --secondary: 199 73% 73%;
+        --secondary-foreground: 214 69% 15%;
+        --muted: 214 50% 20%;
+        --muted-foreground: 215 20% 65%;
+        --accent: 199 73% 73%;
+        --accent-foreground: 214 69% 15%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 199 73% 73% / 0.2;
+        --input: 214 50% 25%;
+        --ring: 27 100% 86%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-navy text-slate-100 font-sans antialiased;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    ::selection {
+        background: #FFDAB9;
+        color: #0C2340;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #071526;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #102C50;
+        border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #87CEEB;
+    }
+}
+
+.grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+.hero-grid {
+    background-image:
+        linear-gradient(rgba(135, 206, 235, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(135, 206, 235, 0.06) 1px, transparent 1px);
+    background-size: 72px 72px;
+}
+
+.text-outline {
+    -webkit-text-stroke: 1.5px rgba(135, 206, 235, 0.45);
+    color: transparent;
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+}

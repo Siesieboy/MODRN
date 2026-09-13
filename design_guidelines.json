@@ -1,0 +1,103 @@
+{
+  "project_name": "Dutch Personal Portfolio - [Jouw Naam]",
+  "app_type": "portfolio",
+  "theme": "dark_primary_with_light_section",
+  "archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST / EDITORIAL KINETIC",
+  "colors": {
+    "primary_dark_bg": "#0C2340",
+    "surface_dark": "#071526",
+    "surface_card_dark": "#102C50",
+    "primary_accent_peach": "#FFDAB9",
+    "primary_accent_peach_hover": "#FCE5CD",
+    "secondary_accent_sky_blue": "#87CEEB",
+    "secondary_accent_sky_blue_light": "rgba(135, 206, 235, 0.15)",
+    "light_section_bg": "#F5F5F5",
+    "light_surface_card": "#FFFFFF",
+    "text_dark_theme_main": "#F8FAFC",
+    "text_dark_theme_muted": "#94A3B8",
+    "text_light_theme_main": "#0C2340",
+    "text_light_theme_muted": "#475569",
+    "border_dark": "rgba(135, 206, 235, 0.2)",
+    "border_light": "rgba(12, 35, 64, 0.12)"
+  },
+  "typography": {
+    "font_imports": "@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');",
+    "heading_font": "'Outfit', sans-serif",
+    "body_font": "'Plus Jakarta Sans', sans-serif",
+    "mono_font": "'JetBrains Mono', monospace",
+    "banned_fonts": ["Inter", "Roboto", "Poppins", "Space Grotesk"],
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-extrabold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "mono_label": "text-xs sm:text-sm font-mono uppercase tracking-widest"
+    }
+  },
+  "layout_strategy": {
+    "hero": "Kinetic masked text reveal + dual CTAs + floating 3D tech tilt widget in #0C2340 background",
+    "marquee": "Continuous slow-moving editorial text banner separating hero and body",
+    "over_mij": "Two-column grid in #F5F5F5 light background: left modern portrait with frame overlay, right 2 editorial paragraphs + 3 numbered manifesto chapters (01 Visie, 02 Precisie, 03 Impact)",
+    "projecten": "Bento-inspired responsive project grid (col-span-12 / col-span-6) with crisp image mockups, #87CEEB tech tag pills, hover lift state, and full interactive modal details",
+    "vaardigheden": "Category tabbed skill matrix (Frontend, Visual UI, System Architecture) with animated progress bars, level percentage badges, and interactive tooltips",
+    "contact": "Dark navy section #0C2340 with direct email form, instant client-side validation, toast feedback via Sonner, and social quick links (GitHub, LinkedIn, Twitter)",
+    "footer": "Editorial footer with live status indicator, copyright, and smooth scroll back-to-top feature"
+  },
+  "motion_and_effects": {
+    "smooth_scroll": "Lenis smooth scroll integration + framer-motion section triggers",
+    "hero_reveal": "Staggered line-by-line reveal using Framer Motion",
+    "hover_effects": "Buttons transform -translate-y-0.5 with high contrast state, project cards tilt/lift shadow on hover",
+    "tracing_beam": "Glowing border animation around active hero tech widget and contact form card",
+    "reduced_motion": "Supported via standard framer-motion prefers-reduced-motion check"
+  },
+  "image_urls": {
+    "hero_portrait": "https://images.unsplash.com/photo-1764546373114-2d7a87221733?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxkZXZlbG9wZXIlMjBwb3J0cmFpdCUyMGRhcmslMjBiYWNrZ3JvdW5kJTIwbW9kZXJuJTIwc3R1ZGlvfGVufDB8fHx8MTc4OTMxMzU2OHww&ixlib=rb-4.1.0&q=85",
+    "developer_studio": "https://images.unsplash.com/photo-1782069326883-090221bfcd6e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBwb3J0cmFpdCUyMGRhcmslMjBiYWNrZ3JvdW5kJTIwbW9kZXJuJTIwc3R1ZGlvfGVufDB8fHx8MTc4OTMxMzU2OHww&ixlib=rb-4.1.0&q=85",
+    "projects": [
+      {
+        "id": "proj-1",
+        "title": "Fintech Dashboard Analytics",
+        "description": "Real-time financieel dashboard met high-frequency data visualisaties, interactive grafieken en automated rapportage.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZCUyMGNsZWFuJTIwZGVzaWduJTIwVUl8ZW58MHx8fHwxNzg5MzEzNTY5fDA&ixlib=rb-4.1.0&q=85",
+        "tags": ["React", "TailwindCSS", "Recharts", "TypeScript"]
+      },
+      {
+        "id": "proj-2",
+        "title": "E-Commerce Design System",
+        "description": "Modulair en toegankelijk componenten-framework voor een internationale mode-retailer met focus op conversie.",
+        "image": "https://images.unsplash.com/photo-1634084462412-b54873c0a56d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZCUyMGNsZWFuJTIwZGVzaWduJTIwVUl8ZW58MHx8fHwxNzg5MzEzNTY5fDA&ixlib=rb-4.1.0&q=85",
+        "tags": ["Next.js", "Framer Motion", "Shadcn/UI", "Storybook"]
+      },
+      {
+        "id": "proj-3",
+        "title": "Mobile Banking Interface",
+        "description": "Next-gen mobiele bankieren app met biometrische beveiliging, micro-interacties en donkere modus.",
+        "image": "https://images.unsplash.com/photo-1783195016858-196aa1a7c76a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBkZXNpZ24lMjBzaG93Y2FzZSUyMFVJfGVufDB8fHx8MTc4OTMxMzU3Nnww&ixlib=rb-4.1.0&q=85",
+        "tags": ["React Native", "Tailwind", "Zustand", "Figma"]
+      },
+      {
+        "id": "proj-4",
+        "title": "Creative Studio Portfolio Hub",
+        "description": "Minimalistische portfolio site met scrollytelling visualisaties, WebGL effecten en bliksemsnelle laadtijden.",
+        "image": "https://images.unsplash.com/photo-1782328525381-45db8b20bb59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBkZXNpZ24lMjBzaG93Y2FzZSUyMFVJfGVufDB8fHx8MTc4OTMxMzU3Nnww&ixlib=rb-4.1.0&q=85",
+        "tags": ["Three.js", "Lenis", "GSAP", "TailwindCSS"]
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure the hero background matches #0C2340 exactly.",
+    "Use #FFDAB9 (Peach) for primary CTA 'Bekijk mijn werk' with dark text (#0C2340).",
+    "Use #87CEEB (Sky Blue) for secondary outline CTA 'Neem contact op' and tech tag backgrounds.",
+    "Keep literal name '[Jouw Naam]' as requested in problem statement with options to personalize.",
+    "Implement working contact form with Sonner toast feedback and input state validation.",
+    "Section 'Over Mij' must have light background #F5F5F5 with two-column layout and manifesto chapters.",
+    "Ensure all interactive elements have explicit data-testid attributes."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Add data-testid to every button, link, input, and interactive card.",
+    "Never use Inter, Roboto, or Poppins for headlines; use Outfit with tight tracking.",
+    "Avoid full transparent header background; use glassmorphism with backdrop-blur.",
+    "Maintain strict APCA/WCAG AA contrast ratios for all text."
+  ]
+}
