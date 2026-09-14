@@ -24,9 +24,9 @@ export const Navbar = () => {
           aria-label="MODRN — naar boven"
         >
           <img
-            src="/images/modrn-mark.png"
-            alt="MODRN"
-            className="h-4 w-auto drop-shadow-[0_0_12px_rgba(135,206,235,0.35)]"
+            src="/images/modrn-logo-v2.png"
+            alt="MODRN website building & design"
+            className="h-6 w-auto drop-shadow-[0_0_12px_rgba(135,206,235,0.35)]"
           />
         </a>
 

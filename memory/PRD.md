@@ -39,6 +39,9 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 ## Update 2026-09-13 (logo)
 - Officieel MODRN-logo geïnstalleerd: witte achtergrond verwijderd (transparant PNG), alleen het MODRN-beeldmerk zonder tagline in de hero én klein (h-4) in de navigatie linksboven (/images/modrn-mark.png). Geverifieerd op desktop en mobiel.
 
+## Update 2026-09-14 (logo v2)
+- Grote hero-logo volledig verwijderd. Navigatie-linksboven gebruikt nu het nieuwe officiële logo (met tagline, /images/modrn-logo-v2.png, transparant gemaakt) op klein formaat.
+
 ## Update 2026-09-14 (socials + navigatie)
 - Socials bijgewerkt: LinkedIn en X verwijderd, Instagram toegevoegd (https://instagram.com/_siespasteuning_, schone URL zonder tracking-parameters) naast GitHub in de contactsectie én in de footer. Reviews-link toegevoegd aan hoofdnavigatie. AI-conceptprojecten blijven bewust staan tot echte cases beschikbaar zijn. Geverifieerd: nav-link Reviews scrollt correct, social-links kloppen (ook footer).
 
