@@ -37,5 +37,8 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 - Aanvragers krijgen nu automatisch een bevestigingsmail ("Bedankt voor je aanvraag — MODRN") met hun pakketkeuze en reactietijd. Mislukt de bevestiging, dan gaat de aanvraag zelf alsnog door (wordt gelogd). Geverifieerd met testverzending: beide mails verstuurd, geen fouten.
 
 ## Update 2026-09-13 (logo)
-- Officieel MODRN-logo geïnstalleerd: witte achtergrond verwijderd (transparant PNG), volledige logo met tagline in de hero, alleen het MODRN-beeldmerk in de navigatie linksboven (/images/modrn-logo.png, /images/modrn-mark.png). Geverifieerd op desktop en mobiel.
+- Officieel MODRN-logo geïnstalleerd: witte achtergrond verwijderd (transparant PNG), alleen het MODRN-beeldmerk zonder tagline in de hero én klein (h-4) in de navigatie linksboven (/images/modrn-mark.png). Geverifieerd op desktop en mobiel.
+
+## Update 2026-09-14 (socials + navigatie)
+- Socials bijgewerkt: LinkedIn en X verwijderd, Instagram toegevoegd (https://instagram.com/_siespasteuning_, schone URL zonder tracking-parameters) naast GitHub. Reviews-link toegevoegd aan hoofdnavigatie. AI-conceptprojecten blijven bewust staan tot echte cases beschikbaar zijn. Geverifieerd: nav-link Reviews scrollt correct, social-links kloppen.
 

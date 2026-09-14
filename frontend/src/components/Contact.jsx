@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Github, Linkedin, Twitter, Send, Loader2 } from "lucide-react";
+import { Github, Instagram, Send, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal } from "./Reveal";
 import { PACKAGES } from "./Services";
@@ -8,8 +8,7 @@ const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const SOCIALS = [
   { name: "GitHub", icon: Github, href: "https://github.com/Siesieboy", id: "github" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com", id: "linkedin" },
-  { name: "Twitter / X", icon: Twitter, href: "https://x.com", id: "twitter" },
+  { name: "Instagram", icon: Instagram, href: "https://instagram.com/_siespasteuning_", id: "instagram" },
 ];
 
 export const Contact = () => {
