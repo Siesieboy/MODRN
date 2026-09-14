@@ -32,6 +32,9 @@ const DESIGN_EXAMPLES = [
   { src: "/images/design/design-logo.png", alt: "Logo-ontwerp voor Koffiehoek", label: "Logo" },
   { src: "/images/design/design-poster.png", alt: "Poster-ontwerp voor Zomerklanken", label: "Poster" },
   { src: "/images/design/design-flyer.png", alt: "Flyer-ontwerp voor Kapper Stijl", label: "Flyer" },
+  { src: "/images/design/design-visitekaartje.png", alt: "Visitekaartje-ontwerp voor Groen & Co", label: "Visitekaartje" },
+  { src: "/images/design/design-instagram.png", alt: "Instagram-post-ontwerp voor Fris & Fruitig", label: "Instagram-post" },
+  { src: "/images/design/design-menukaart.png", alt: "Menukaart-ontwerp voor Forno", label: "Menukaart" },
 ];
 
 export const Projects = () => {
