@@ -178,6 +178,7 @@ async def submit_contact(message: ContactMessage, request: Request):
     email_id = await send_email(to=CONTACT_RECIPIENT, subject=subject, html=html)
 
     pakket_tekst = {
+        "design": "Design Pakket (vanaf €149)",
         "onepager": "One-Pager (vanaf €499)",
         "business": "Business Site (vanaf €999)",
         "maatwerk": "Webshop / Maatwerk (vanaf €1.999)",

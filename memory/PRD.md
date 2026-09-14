@@ -42,6 +42,9 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 ## Update 2026-09-14 (logo v2)
 - Grote hero-logo volledig verwijderd. Navigatie-linksboven gebruikt nu het nieuwe officiële logo (met tagline, /images/modrn-logo-v2.png, transparant gemaakt) op klein formaat.
 
+## Update 2026-09-14 (designpakket)
+- Vierde pakket toegevoegd: "Design Pakket" vanaf €149 (logo's, posters, social media templates, visitekaartjes/flyers, 1 revisieronde, oplevering 3 dagen) — het voordeligste pakket. Diensten-grid naar 4 kolommen, titel gewijzigd naar "Wat kost jouw project?". Pakketkeuze in formulier en e-mailtekst meegenomen. Geverifieerd: kaart zichtbaar, "Vraag aan" vult pakket "design" vooringevuld in.
+
 ## Update 2026-09-14 (socials + navigatie)
 - Socials bijgewerkt: LinkedIn en X verwijderd, Instagram toegevoegd (https://instagram.com/_siespasteuning_, schone URL zonder tracking-parameters) naast GitHub in de contactsectie én in de footer. Reviews-link toegevoegd aan hoofdnavigatie. AI-conceptprojecten blijven bewust staan tot echte cases beschikbaar zijn. Geverifieerd: nav-link Reviews scrollt correct, social-links kloppen (ook footer).
 

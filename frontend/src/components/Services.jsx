@@ -3,6 +3,20 @@ import { Reveal } from "./Reveal";
 
 export const PACKAGES = [
   {
+    id: "design",
+    name: "Design Pakket",
+    price: "€149",
+    tagline: "Logo's, posters en meer",
+    features: [
+      "Logo of poster op maat",
+      "Social media templates",
+      "Visitekaartjes en flyers",
+      "1 revisieronde inbegrepen",
+      "Oplevering binnen 3 dagen",
+    ],
+    featured: false,
+  },
+  {
     id: "onepager",
     name: "One-Pager",
     price: "€499",
@@ -53,7 +67,7 @@ export const Services = () => (
       <Reveal>
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">04 — Diensten</p>
         <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-50">
-          Wat kost een custom website?
+          Wat kost jouw project?
         </h2>
         <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-400">
           Transparante vanaf-prijzen, geen verrassingen. Elke aanvraag krijgt
@@ -61,7 +75,7 @@ export const Services = () => (
         </p>
       </Reveal>
 
-      <div className="mt-16 grid md:grid-cols-3 gap-8">
+      <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {PACKAGES.map((p, i) => (
           <Reveal key={p.id} delay={0.08 * i}>
             <article
