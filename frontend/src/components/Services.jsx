@@ -65,7 +65,7 @@ export const Services = () => (
   <section id="diensten" data-testid="services-section" className="bg-navy py-28 sm:py-36">
     <div className="max-w-6xl mx-auto px-6">
       <Reveal>
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">04 — Diensten</p>
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-sky mb-4">04 — Pakketten</p>
         <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-50">
           Wat kost jouw project?
         </h2>
