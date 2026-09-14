@@ -42,6 +42,9 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 ## Update 2026-09-14 (logo v2)
 - Grote hero-logo volledig verwijderd. Navigatie-linksboven gebruikt nu het nieuwe officiële logo (met tagline, /images/modrn-logo-v2.png, transparant gemaakt) op klein formaat.
 
+## Update 2026-09-14 (designvoorbeelden)
+- Drie AI-gegenereerde designvoorbeelden toegevoegd onder de Diensten-kaarten ("Voorbeelden van designwerk" met AI-voorbeelden-badge): logo Koffiehoek, poster Zomerklanken, flyer Kapper Stijl (/images/design/*.png). Geverifieerd via screenshot.
+
 ## Update 2026-09-14 (designpakket)
 - Vierde pakket toegevoegd: "Design Pakket" vanaf €149 (logo's, posters, social media templates, visitekaartjes/flyers, 1 revisieronde, oplevering 3 dagen) — het voordeligste pakket. Diensten-grid naar 4 kolommen, titel gewijzigd naar "Wat kost jouw project?". Pakketkeuze in formulier en e-mailtekst meegenomen. Geverifieerd: kaart zichtbaar, "Vraag aan" vult pakket "design" vooringevuld in.
 
