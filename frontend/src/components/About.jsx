@@ -46,6 +46,23 @@ export const About = () => (
             </p>
           </Reveal>
 
+          <Reveal delay={0.2}>
+            <div
+              data-testid="ai-voordeel-blok"
+              className="mt-8 rounded-2xl border-l-4 border-peach bg-navy/[0.04] p-6"
+            >
+              <p className="font-display text-lg font-semibold text-navy">
+                Wat betekent dat voor jou?
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                Omdat AI een groot deel van het werk overneemt, hoef ik minder
+                uren te maken — en die uren betaal je dus niet. Een custom
+                website van MODRN is daardoor voordeliger dan bij een
+                traditioneel bureau, mét dezelfde kwaliteit en aandacht.
+              </p>
+            </div>
+          </Reveal>
+
           <div className="mt-12 space-y-0">
             {CHAPTERS.map((c, i) => (
               <Reveal key={c.n} delay={0.2 + i * 0.1}>
