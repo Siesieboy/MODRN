@@ -1,4 +1,4 @@
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Instagram } from "lucide-react";
 
 export const Footer = () => (
   <footer className="bg-ink border-t border-sky/10 py-10">
@@ -13,14 +13,26 @@ export const Footer = () => (
         </span>
         Beschikbaar voor nieuwe projecten
       </div>
-      <a
-        href="#home"
-        data-testid="footer-back-to-top"
-        aria-label="Terug naar boven"
-        className="w-10 h-10 rounded-full border border-sky/25 flex items-center justify-center text-sky hover:bg-peach hover:text-navy hover:border-peach transition-all duration-300"
-      >
-        <ArrowUp size={16} />
-      </a>
+      <div className="flex items-center gap-4">
+        <a
+          href="https://instagram.com/_siespasteuning_"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram van Sies Pasteuning"
+          data-testid="footer-social-instagram"
+          className="w-10 h-10 rounded-full border border-sky/25 flex items-center justify-center text-sky hover:bg-peach hover:text-navy hover:border-peach transition-all duration-300"
+        >
+          <Instagram size={16} />
+        </a>
+        <a
+          href="#home"
+          data-testid="footer-back-to-top"
+          aria-label="Terug naar boven"
+          className="w-10 h-10 rounded-full border border-sky/25 flex items-center justify-center text-sky hover:bg-peach hover:text-navy hover:border-peach transition-all duration-300"
+        >
+          <ArrowUp size={16} />
+        </a>
+      </div>
     </div>
   </footer>
 );
