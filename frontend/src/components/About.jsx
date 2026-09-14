@@ -39,7 +39,9 @@ export const About = () => (
             </p>
             <p className="mt-5 text-base leading-relaxed text-slate-600">
               Geen standaard templates, maar maatwerk — van eerste schets tot
-              livegang. Jij levert de ambitie, ik zorg voor een website die
+              livegang. Ik bouw websites met hulp van AI, waardoor ik sneller
+              en scherper geprijsd kan leveren zonder in te leveren op
+              kwaliteit. Jij levert de ambitie, ik zorg voor een website die
               daar naadloos bij aansluit.
             </p>
           </Reveal>
