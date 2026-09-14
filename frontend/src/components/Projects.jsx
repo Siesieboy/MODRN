@@ -26,22 +26,12 @@ const PROJECTS = [
     image: "/images/projects/proj-fitcentrum.png",
     tags: ["Next.js", "Framer Motion", "Boekingssysteem", "Design"],
   },
-  {
-    id: "proj-3",
-    title: "Café Koper — Restaurant",
-    description:
-      "Sfeervolle site met menukaart, reserveringsmodule en het verhaal achter het huis.",
-    image: "/images/projects/proj-cafekoper.png",
-    tags: ["React", "UI/UX", "Reserveren", "SEO"],
-  },
-  {
-    id: "proj-4",
-    title: "Studio Nova — Portfolio",
-    description:
-      "Minimalistisch studioportfolio met scrollytelling dat nieuwe opdrachten binnenhaalt.",
-    image: "/images/projects/proj-studionova.png",
-    tags: ["Three.js", "Lenis", "GSAP", "TailwindCSS"],
-  },
+];
+
+const DESIGN_EXAMPLES = [
+  { src: "/images/design/design-logo.png", alt: "Logo-ontwerp voor Koffiehoek", label: "Logo" },
+  { src: "/images/design/design-poster.png", alt: "Poster-ontwerp voor Zomerklanken", label: "Poster" },
+  { src: "/images/design/design-flyer.png", alt: "Flyer-ontwerp voor Kapper Stijl", label: "Flyer" },
 ];
 
 export const Projects = () => {
@@ -99,6 +89,41 @@ export const Projects = () => {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.1}>
+          <div className="mt-20">
+            <div className="flex flex-wrap items-center gap-4 mb-8">
+              <h3 className="font-display text-xl sm:text-2xl font-semibold text-slate-50">
+                Voorbeelden van designwerk
+              </h3>
+              <span
+                data-testid="design-examples-badge"
+                className="text-xs font-mono px-3 py-1 rounded-full bg-sky/10 border border-sky/25 text-sky"
+              >
+                AI-voorbeelden
+              </span>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-6">
+              {DESIGN_EXAMPLES.map((d) => (
+                <figure
+                  key={d.src}
+                  data-testid={`design-example-${d.label.toLowerCase()}`}
+                  className="group relative rounded-2xl overflow-hidden border border-sky/15 hover:border-sky/40 hover:-translate-y-1.5 transition-all duration-500"
+                >
+                  <img
+                    src={d.src}
+                    alt={d.alt}
+                    loading="lazy"
+                    className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                  <figcaption className="absolute bottom-3 left-3 bg-navy/85 backdrop-blur-sm text-peach text-xs font-mono uppercase tracking-widest px-3 py-1.5 rounded-full">
+                    {d.label}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </Reveal>
       </div>
 
       <Dialog open={!!active} onOpenChange={() => setActive(null)}>

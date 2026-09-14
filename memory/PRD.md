@@ -42,6 +42,9 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 ## Update 2026-09-14 (logo v2)
 - Grote hero-logo volledig verwijderd. Navigatie-linksboven gebruikt nu het nieuwe officiële logo (met tagline, /images/modrn-logo-v2.png, transparant gemaakt) op klein formaat.
 
+## Update 2026-09-14 (herindeling voorbeelden)
+- Projecten teruggebracht tot 2 naast elkaar (Bakkerij Van Dort + FitCentrum Lokaal); Café Koper en Studio Nova verwijderd. De 3 designvoorbeelden verplaatst van Diensten naar onder de websitevoorbeelden in de Projecten-sectie. Geverifieerd via screenshots.
+
 ## Update 2026-09-14 (designvoorbeelden)
 - Drie AI-gegenereerde designvoorbeelden toegevoegd onder de Diensten-kaarten ("Voorbeelden van designwerk" met AI-voorbeelden-badge): logo Koffiehoek, poster Zomerklanken, flyer Kapper Stijl (/images/design/*.png). Geverifieerd via screenshot.
 
