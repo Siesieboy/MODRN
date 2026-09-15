@@ -4,16 +4,10 @@ import { Reveal } from "./Reveal";
 
 const CATEGORIES = {
   Frontend: [
-    { name: "React / Next.js", level: 92 },
-    { name: "TypeScript", level: 86 },
-    { name: "TailwindCSS", level: 94 },
-    { name: "Framer Motion / GSAP", level: 80 },
-  ],
-  "UI & Design": [
-    { name: "Figma", level: 90 },
-    { name: "Design Systems", level: 85 },
-    { name: "Prototyping", level: 82 },
-    { name: "Toegankelijkheid (WCAG)", level: 78 },
+    { name: "CSS", level: 94 },
+    { name: "HTML", level: 96 },
+    { name: "Graphic Design", level: 85 },
+    { name: "JavaScript", level: 88 },
   ],
   "Soft Skills": [
     { name: "Samenwerken", level: 95 },
