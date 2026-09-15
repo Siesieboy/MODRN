@@ -5,7 +5,7 @@ export const PACKAGES = [
   {
     id: "design",
     name: "Design Pakket",
-    price: "€149",
+    price: "€99",
     tagline: "Logo's, posters en meer",
     features: [
       "Logo of poster op maat",
