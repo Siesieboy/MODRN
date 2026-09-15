@@ -179,9 +179,9 @@ async def submit_contact(message: ContactMessage, request: Request):
 
     pakket_tekst = {
         "design": "Design Pakket (vanaf €99)",
-        "onepager": "One-Pager (vanaf €499)",
-        "business": "Business Site (vanaf €999)",
-        "maatwerk": "Webshop / Maatwerk (vanaf €1.999)",
+        "onepager": "One-Pager (vanaf €399)",
+        "business": "Business Site (vanaf €899)",
+        "maatwerk": "Webshop / Maatwerk (vanaf €1.899)",
     }.get(message.pakket, "Nog geen keuze — we denken graag met je mee")
     bevestiging_html = (
         '<table role="presentation" width="100%"><tr><td style="padding:24px;'

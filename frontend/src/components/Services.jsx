@@ -19,7 +19,7 @@ export const PACKAGES = [
   {
     id: "onepager",
     name: "One-Pager",
-    price: "€499",
+    price: "€399",
     tagline: "Perfect om snel online te zijn",
     features: [
       "1 op maat ontworpen pagina",
@@ -33,7 +33,7 @@ export const PACKAGES = [
   {
     id: "business",
     name: "Business Site",
-    price: "€999",
+    price: "€899",
     tagline: "Voor bedrijven die willen groeien",
     features: [
       "Tot 6 maatwerk pagina's",
@@ -48,7 +48,7 @@ export const PACKAGES = [
   {
     id: "maatwerk",
     name: "Webshop / Maatwerk",
-    price: "€1.999",
+    price: "€1.899",
     tagline: "Voor ambitieuze projecten",
     features: [
       "Webshop of custom functionaliteit",
