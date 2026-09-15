@@ -45,6 +45,7 @@ Portfolio website met: Header/Nav (logo, links Over mij/Projecten/Vaardigheden/C
 ## Update 2026-09-14 (herindeling voorbeelden)
 - Projecten teruggebracht tot 2 naast elkaar (Bakkerij Van Dort + FitCentrum Lokaal); Café Koper en Studio Nova verwijderd. De 3 designvoorbeelden verplaatst van Diensten naar onder de websitevoorbeelden in de Projecten-sectie. Geverifieerd via screenshots.
 - 2026-09-14: Diensten hernoemd naar "Pakketten" (nav + sectielabel). Designgalerij uitgebreid naar 6 voorbeelden: visitekaartje Groen & Co, Instagram-post Fris & Fruitig en menukaart Forno toegevoegd na bijvullen Universal Key-tegoed. Geverifieerd via screenshot.
+- 2026-09-15: Lightbox op designvoorbeelden — klik opent het ontwerp groot met label en AI-voorbeeld-vermelding; sluiten via Escape/kruisje. Geverifieerd e2e (openen + sluiten).
 
 ## Update 2026-09-14 (designvoorbeelden)
 - Drie AI-gegenereerde designvoorbeelden toegevoegd onder de Diensten-kaarten ("Voorbeelden van designwerk" met AI-voorbeelden-badge): logo Koffiehoek, poster Zomerklanken, flyer Kapper Stijl (/images/design/*.png). Geverifieerd via screenshot.

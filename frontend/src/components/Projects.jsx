@@ -39,6 +39,7 @@ const DESIGN_EXAMPLES = [
 
 export const Projects = () => {
   const [active, setActive] = useState(null);
+  const [design, setDesign] = useState(null);
 
   return (
     <section id="projecten" data-testid="projects-section" className="bg-ink py-28 sm:py-36">
@@ -108,10 +109,12 @@ export const Projects = () => {
             </div>
             <div className="grid sm:grid-cols-3 gap-6">
               {DESIGN_EXAMPLES.map((d) => (
-                <figure
+                <button
                   key={d.src}
-                  data-testid={`design-example-${d.label.toLowerCase()}`}
-                  className="group relative rounded-2xl overflow-hidden border border-sky/15 hover:border-sky/40 hover:-translate-y-1.5 transition-all duration-500"
+                  data-testid={`design-example-${d.label.toLowerCase().replace(/[^a-z]/g, "-")}`}
+                  onClick={() => setDesign(d)}
+                  aria-label={`${d.alt} groot bekijken`}
+                  className="group relative rounded-2xl overflow-hidden border border-sky/15 hover:border-sky/40 hover:-translate-y-1.5 transition-all duration-500 text-left cursor-zoom-in"
                 >
                   <img
                     src={d.src}
@@ -119,10 +122,10 @@ export const Projects = () => {
                     loading="lazy"
                     className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
-                  <figcaption className="absolute bottom-3 left-3 bg-navy/85 backdrop-blur-sm text-peach text-xs font-mono uppercase tracking-widest px-3 py-1.5 rounded-full">
+                  <span className="absolute bottom-3 left-3 bg-navy/85 backdrop-blur-sm text-peach text-xs font-mono uppercase tracking-widest px-3 py-1.5 rounded-full">
                     {d.label}
-                  </figcaption>
-                </figure>
+                  </span>
+                </button>
               ))}
             </div>
           </div>
@@ -154,6 +157,29 @@ export const Projects = () => {
                 ))}
               </div>
             </>
+          )}
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={!!design} onOpenChange={() => setDesign(null)}>
+        <DialogContent
+          data-testid="design-lightbox"
+          className="bg-ink/95 border-sky/25 max-w-2xl p-3 sm:p-4"
+        >
+          {design && (
+            <div>
+              <img
+                src={design.src}
+                alt={design.alt}
+                className="w-full max-h-[75vh] object-contain rounded-xl"
+              />
+              <div className="flex items-center justify-between px-2 pt-3">
+                <p className="font-mono text-xs uppercase tracking-widest text-peach">
+                  {design.label}
+                </p>
+                <p className="text-xs text-slate-500">AI-voorbeeld — {design.alt}</p>
+              </div>
+            </div>
           )}
         </DialogContent>
       </Dialog>
