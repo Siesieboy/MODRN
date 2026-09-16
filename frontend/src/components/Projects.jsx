@@ -58,14 +58,19 @@ export const Projects = () => {
                 data-testid={`project-card-${p.id}`}
                 className="group rounded-2xl border border-sky/15 bg-card/50 overflow-hidden hover:-translate-y-2 hover:border-sky/40 hover:shadow-[0_24px_60px_rgba(135,206,235,0.12)] transition-all duration-500"
               >
-                <div className="overflow-hidden aspect-[3/2]">
+                <button
+                  data-testid={`project-image-${p.id}`}
+                  onClick={() => setDesign({ src: p.image, alt: p.title, label: "Website" })}
+                  aria-label={`${p.title} groot bekijken`}
+                  className="block w-full overflow-hidden aspect-[3/2] cursor-zoom-in"
+                >
                   <img
                     src={p.image}
                     alt={p.title}
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
-                </div>
+                </button>
                 <div className="p-7">
                   <h3 className="font-display text-xl sm:text-2xl font-semibold text-slate-50 group-hover:text-peach transition-colors duration-300">
                     {p.title}
