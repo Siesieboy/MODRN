@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { Reveal } from "./Reveal";
 import { PACKAGES } from "./Services";
 
-const WEB3FORMS_ACCESS_KEY = "dfe0f8b4-c29c-410c-ba7a-85a239ba9a82";
+const FORMBOLD_ENDPOINT = "https://formbold.com/s/oyX2Y";
 
 const SOCIALS = [
   { name: "GitHub", icon: Github, href: "https://github.com/Siesieboy", id: "github" },
@@ -27,11 +27,10 @@ export const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(FORMBOLD_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          access_key: WEB3FORMS_ACCESS_KEY,
           naam: form.naam,
           email: form.email,
           pakket: form.pakket,
@@ -39,8 +38,7 @@ export const Contact = () => {
           subject: "Nieuwe aanvraag via MODRN contactformulier",
         }),
       });
-      const data = await res.json();
-      if (!res.ok || !data.success) throw new Error();
+      if (!res.ok) throw new Error();
       toast.success("Aanvraag verzonden! Ik neem snel contact met je op.");
       setForm({ naam: "", email: "", bericht: "", pakket: "" });
     } catch {
