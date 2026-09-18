@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { Reveal } from "./Reveal";
 import { PACKAGES } from "./Services";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const WEB3FORMS_ACCESS_KEY = "dfe0f8b4-c29c-410c-ba7a-85a239ba9a82";
 
 const SOCIALS = [
   { name: "GitHub", icon: Github, href: "https://github.com/Siesieboy", id: "github" },
@@ -27,12 +27,20 @@ export const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch(`${API}/contact`, {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          naam: form.naam,
+          email: form.email,
+          pakket: form.pakket,
+          bericht: form.bericht,
+          subject: "Nieuwe aanvraag via MODRN contactformulier",
+        }),
       });
-      if (!res.ok) throw new Error();
+      const data = await res.json();
+      if (!res.ok || !data.success) throw new Error();
       toast.success("Aanvraag verzonden! Ik neem snel contact met je op.");
       setForm({ naam: "", email: "", bericht: "", pakket: "" });
     } catch {
